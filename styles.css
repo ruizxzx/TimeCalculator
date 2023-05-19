@@ -1,0 +1,170 @@
+body {
+    background-color: #191919;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .container input[type="number"] {
+    background-color: #282828;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 60px;
+    margin: 5px;
+  }
+  
+  .container button {
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .time-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .time-list li {
+    background-color: #008080;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .total-time {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .container button {
+  background-color: #008080;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button:hover {
+  background-color: #00bfbf;
+}
+
+.container button:hover::before {
+  content: "+";
+}
+
+.container button::before {
+  content: "";
+}
+
+.navbar {
+    background-color: #008080;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .navbar-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    width: 50%;
+  }
+  
+  .navbar-button:hover {
+    background-color: #00bfbf;
+  }
+  
+  .navbar-button-left {
+    text-align: left;
+  }
+  
+  .navbar-button-right {
+    text-align: right;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 60px; /* Add top margin to push content down */
+  }
+  
+  /* Rest of the CSS styles remain the same */
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar__button {
+    margin: 0 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .time-input {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .time-input label {
+    display: block;
+    margin-bottom: 5px;
+  }
+    
+  #subtract-btn {
+    .container button:hover {
+        background-color: #00bfbf;
+      }
+      
+      .container button:hover::before {
+        content: "-";
+      }
+      
+      .container button::before {
+        content: "";
+      }
+  }
