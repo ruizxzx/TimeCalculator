@@ -4,14 +4,30 @@
   <title>Time Duration Calculator - Subtract</title>
   <link rel="icon" type="image/png" href="https://i.ibb.co/9HpBzdG/mantelpiece-clock-1f570-fe0f.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<meta name="description" content="Calculate time duration easily with our Time Duration Calculator. Subtract hours, minutes, and seconds.">
+  <meta name="description" content="Calculate time duration easily with our Time Duration Calculator. Subtract hours, minutes, and seconds.">
 
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f659ce7d-0187-44f1-a7f2-be23e1b6ffd6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f659ce7d-0187-44f1-a7f2-be23e1b6ffd6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; /* Add bottom padding to create space for comments */
+  }
+  
+  #time-list {
+    max-height: 200px; /* Limit the height of the time list container */
+    overflow-y: auto; /* Add vertical scroll to the time list */
+    margin-bottom: 20px; /* Add bottom margin to create space for comments */
+  }
+  
+  #disqus_thread {
+    width: 100%; /* Set the Disqus container to fill the entire width */
+  }
+</style>
 <body>
-
-
   <nav class="navbar">
     <a href="index.html" class="navbar-button navbar-button-left">Add</a>
     <a href="substract.html" class="navbar-button navbar-button-right">Subtract</a>
@@ -38,7 +54,7 @@
   </div>
   
   <script src="substract.js"></script>
-<div id="disqus_thread"></div>
+  <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
