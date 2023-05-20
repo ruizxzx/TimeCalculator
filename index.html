@@ -4,13 +4,29 @@
   <title>Time Duration Calculator - Add</title>
   <link rel="icon" type="image/png" href="https://i.ibb.co/9HpBzdG/mantelpiece-clock-1f570-fe0f.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<meta name="description" content="Calculate time duration easily with our Time Duration Calculator. Add or subtract hours, minutes, and seconds.">
+  <meta name="description" content="Calculate time duration easily with our Time Duration Calculator. Add or subtract hours, minutes, and seconds.">
 
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f659ce7d-0187-44f1-a7f2-be23e1b6ffd6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px; /* Add bottom padding to create space for comments */
+    }
+    
+    #time-list {
+      max-height: 200px; /* Limit the height of the time list container */
+      overflow-y: auto; /* Add vertical scroll to the time list */
+      margin-bottom: 20px; /* Add bottom margin to create space for comments */
+    }
+    
+    #disqus_thread {
+      width: 100%; /* Set the Disqus container to fill the entire width */
+    }
+  </style>
+</head>
 <body>
-n">
-
   <nav class="navbar">
     <a href="index.html" class="navbar-button navbar-button-left">Add</a>
     <a href="substract.html" class="navbar-button navbar-button-right">Subtract</a>
@@ -32,30 +48,23 @@ n">
       </div>
       <button id="add-btn">Add</button>
     </div>
-    <ul id="time-list"></ul>
+    <div id="time-list-container">
+      <ul id="time-list"></ul>
+    </div>
     <div id="total-time"></div>
   </div>
   
   <script src="add.js"></script>
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://timecalculator.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+  
+  <div id="disqus_thread"></div>
+  <script>
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://timecalculator.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
