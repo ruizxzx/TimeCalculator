@@ -5,7 +5,10 @@ body {
     padding: 20px;
     text-align: center;
   }
-  
+  h1{
+margin-top: 0px;
+padding-top: 0px;
+  }
   .container {
     display: flex;
     justify-content: center;
@@ -77,11 +80,12 @@ body {
     background-color: #008080;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    margin-bottom: 0px;
   }
   
   .navbar-button {
@@ -96,24 +100,23 @@ body {
     width: 50%;
   }
   
-  .navbar-button:hover {
-    background-color: #00bfbf;
+
+  .navbar-button-left:hover {
+    background-color: #18d32e;
+    text-align: center;
   }
   
-  .navbar-button-left {
-    text-align: left;
-  }
-  
-  .navbar-button-right {
-    text-align: right;
+  .navbar-button-right:hover {
+    background-color: red;
+    text-align: center;
   }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-top: 60px; /* Add top margin to push content down */
+    margin-bottom: -100px;
+    margin-top: -100px; /* Add top margin to push content down */
   }
   
   /* Rest of the CSS styles remain the same */
@@ -153,6 +156,9 @@ body {
   .time-input label {
     display: block;
     margin-bottom: 5px;
+    bottom: 0px;
+    border: #00bfbf;
+    margin-bottom: 0;
   }
     
   #subtract-btn {
