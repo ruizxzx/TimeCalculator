@@ -182,3 +182,44 @@ h1 {
   font-size: 18px;
   margin-top: 20px;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+  
+  .container input[type="number"] {
+    width: 90px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .container button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .time-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .total-time {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .navbar-button {
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .input-container {
+    margin-bottom: 30px;
+  }
+  
+  .time-input {
+    margin: 0 15px;
+  }
+}
